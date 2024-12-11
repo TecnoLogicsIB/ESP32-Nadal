@@ -181,7 +181,7 @@ while True:
         change_brightness()
         temps_nucli = temps_actual
     
-    if utime.ticks_diff(temps_actual, temps_funcionament) >= 10000:  # 15 minuts de funcionament: 900000 ms
+    if utime.ticks_diff(temps_actual, temps_funcionament) >= 900000:  # 15 minuts de funcionament: 900000 ms
         print('---- VAIG A DORMIR ----')
         deepsleep()
         temps_funcionament = temps_actual    
